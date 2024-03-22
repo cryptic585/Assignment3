@@ -35,8 +35,8 @@ class MainActivity : ComponentActivity() {
                     composable("mainScreen") { MainScreen(navController) }
                     composable("animation1Screen") { Animation1Screen(navController) }
                     composable("animation2Screen") { Animation2Screen(navController) }
-                    /*composable("animation3Screen") { Animation3Screen(navController) }
-                    composable("animation4Screen") { Animation4Screen(navController) }*/
+                    composable("animation3Screen") { Animation3Screen(navController) }
+                    /*composable("animation4Screen") { Animation4Screen(navController) }*/
                 }
             }
         }
@@ -66,11 +66,11 @@ fun MainScreen(navController: NavController) {
                 ButtonDemo("Screen 2") {
                     navController.navigate("Animation2Screen")
                 }
-//                Spacer(modifier = Modifier.height(16.dp))
-//                ButtonDemo("Animation 3 Demo") {
-//                    navController.navigate("Screen 3")
-//                }
-//                Spacer(modifier = Modifier.height(16.dp))
+              Spacer(modifier = Modifier.height(16.dp))
+                ButtonDemo("Screen 3") {
+                    navController.navigate("Animation3Screen")
+                }
+//s                Spacer(modifier = Modifier.height(16.dp))
 //                ButtonDemo("Animation 4 Demo") {
 //                    navController.navigate("Screen 4")
 //                }
