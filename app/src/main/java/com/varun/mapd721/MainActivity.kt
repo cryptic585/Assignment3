@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
                     composable("animation1Screen") { Animation1Screen(navController) }
                     composable("animation2Screen") { Animation2Screen(navController) }
                     composable("animation3Screen") { Animation3Screen(navController) }
-                    /*composable("animation4Screen") { Animation4Screen(navController) }*/
+                    composable("animation4Screen") { Animation4Screen(navController) }
                 }
             }
         }
@@ -70,10 +70,10 @@ fun MainScreen(navController: NavController) {
                 ButtonDemo("Screen 3") {
                     navController.navigate("Animation3Screen")
                 }
-//s                Spacer(modifier = Modifier.height(16.dp))
-//                ButtonDemo("Animation 4 Demo") {
-//                    navController.navigate("Screen 4")
-//                }
+                Spacer(modifier = Modifier.height(16.dp))
+               ButtonDemo("Screen 4") {
+                  navController.navigate("Animation4Screen")
+                }
             }
             ContainerWithStudentInfo()
         }
