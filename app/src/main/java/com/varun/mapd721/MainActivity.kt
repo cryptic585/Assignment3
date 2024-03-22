@@ -34,8 +34,8 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController, startDestination = "mainScreen") {
                     composable("mainScreen") { MainScreen(navController) }
                     composable("animation1Screen") { Animation1Screen(navController) }
-                    /*composable("animation2Screen") { Animation2Screen(navController) }
-                    composable("animation3Screen") { Animation3Screen(navController) }
+                    composable("animation2Screen") { Animation2Screen(navController) }
+                    /*composable("animation3Screen") { Animation3Screen(navController) }
                     composable("animation4Screen") { Animation4Screen(navController) }*/
                 }
             }
@@ -59,21 +59,21 @@ fun MainScreen(navController: NavController) {
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                ButtonDemo("Animation 1 Demo") {
-                    navController.navigate("Screen 1")
+                ButtonDemo("Screen 1") {
+                    navController.navigate("Animation1Screen")
                 }
                 Spacer(modifier = Modifier.height(16.dp))
-                ButtonDemo("Animation 2 Demo") {
-                    navController.navigate("Screen 2")
+                ButtonDemo("Screen 2") {
+                    navController.navigate("Animation2Screen")
                 }
-                Spacer(modifier = Modifier.height(16.dp))
-                ButtonDemo("Animation 3 Demo") {
-                    navController.navigate("Screen 3")
-                }
-                Spacer(modifier = Modifier.height(16.dp))
-                ButtonDemo("Animation 4 Demo") {
-                    navController.navigate("Screen 4")
-                }
+//                Spacer(modifier = Modifier.height(16.dp))
+//                ButtonDemo("Animation 3 Demo") {
+//                    navController.navigate("Screen 3")
+//                }
+//                Spacer(modifier = Modifier.height(16.dp))
+//                ButtonDemo("Animation 4 Demo") {
+//                    navController.navigate("Screen 4")
+//                }
             }
             ContainerWithStudentInfo()
         }
@@ -98,7 +98,7 @@ fun ContainerWithStudentInfo() {
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp),
-        color = Color(0xFF795548)
+        color = Color(0x0000FF)
     ) {
         Column(
             verticalArrangement = Arrangement.Center,
