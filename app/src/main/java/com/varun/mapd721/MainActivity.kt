@@ -32,9 +32,9 @@ class MainActivity : ComponentActivity() {
 
                 // adding navigation
                 NavHost(navController, startDestination = "mainScreen") {
-                    /*composable("mainScreen") { MainScreen(navController) }
+                    composable("mainScreen") { MainScreen(navController) }
                     composable("animation1Screen") { Animation1Screen(navController) }
-                    composable("animation2Screen") { Animation2Screen(navController) }
+                    /*composable("animation2Screen") { Animation2Screen(navController) }
                     composable("animation3Screen") { Animation3Screen(navController) }
                     composable("animation4Screen") { Animation4Screen(navController) }*/
                 }
@@ -60,19 +60,19 @@ fun MainScreen(navController: NavController) {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 ButtonDemo("Animation 1 Demo") {
-                    navController.navigate("animation1Screen")
+                    navController.navigate("Screen 1")
                 }
                 Spacer(modifier = Modifier.height(16.dp))
                 ButtonDemo("Animation 2 Demo") {
-                    navController.navigate("animation2Screen")
+                    navController.navigate("Screen 2")
                 }
                 Spacer(modifier = Modifier.height(16.dp))
                 ButtonDemo("Animation 3 Demo") {
-                    navController.navigate("animation3Screen")
+                    navController.navigate("Screen 3")
                 }
                 Spacer(modifier = Modifier.height(16.dp))
                 ButtonDemo("Animation 4 Demo") {
-                    navController.navigate("animation4Screen")
+                    navController.navigate("Screen 4")
                 }
             }
             ContainerWithStudentInfo()
@@ -105,14 +105,14 @@ fun ContainerWithStudentInfo() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "Muskan Aggarwal",
+                text = "Varun Bhatt",
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 fontSize = 18.sp,
                 modifier = Modifier.padding(top = 10.dp)
             )
             Text(
-                text = "301399676",
+                text = "301364446",
                 color = Color.White,
                 fontSize = 16.sp,
                 modifier = Modifier.padding(bottom = 10.dp)
