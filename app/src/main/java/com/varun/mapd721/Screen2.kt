@@ -1,5 +1,5 @@
 package com.varun.mapd721
-
+//screen 2
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.core.tween

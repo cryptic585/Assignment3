@@ -1,5 +1,5 @@
 package com.varun.mapd721
-
+//screen 1
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.SizeTransform
